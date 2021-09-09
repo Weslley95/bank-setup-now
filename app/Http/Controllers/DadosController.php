@@ -28,6 +28,11 @@ class DadosController {
         return view('dados.index', compact('dados'));
     }
     
+    public function create() {
+        
+        return view('dados.create');
+    }
+    
     
     
 }

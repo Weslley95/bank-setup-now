@@ -12,23 +12,16 @@
 </head>
 
 <body>
-    
+
   <div class="container">
     <div class="jumbotron">
-      <h1 class="display-6">Dados</h1>
+      <h1>@yield('header')</h1>
     </div>
-      
-      <a href="#" class="btn btn-dark m-3">Adicionar</a>
-      
 
-    <ul class="list-group">
-      <?php foreach ($dados as $dado) : ?>
-        <li class="list-group-item">
-          <center><?= $dado; ?></center>
-        </li>
-      <?php endforeach; ?>
-    </ul>
+    @yield('contents')
   </div>
-</body>
+
+
+  </<body>
 
 </html>

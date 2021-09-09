@@ -18,3 +18,6 @@ Route::get('/', function () {
 });
 
 Route::get('/dash', "DadosController@index");
+
+Route::get('/dash/create', "DadosController@create");
+
