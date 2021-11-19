@@ -14,10 +14,29 @@
 // Up serve -> php artisan serve
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
-Route::get('/dash', "DadosController@index");
 
-Route::get('/dash/create', "DadosController@create");
+// Rotas dedicadas a classe ClientesController
 
+/**
+ * Pagina inicial - Dash
+ */
+Route::get('/dash', "ClientesController@index");
+// Adicionar usuário - método post
+Route::get('/create', "ClientesController@pageCreateClient");
+// Método post - Criar usuário 
+Route::post('/create', "ClientesController@createClient");
+// Excluir usuário
+Route::delete('/dash/{id}', "ClientesController@delete");
+
+/**
+ * Page Edit conta
+ */
+Route::get('/edit/{id}', "ClientesController@pageUpdate");
+// Método post - Atualizar usuário
+Route::post('/edit/{id}', "ClientesController@updateUser");
+
+// Página cliente
+Route::get('/perfil/{id}', 'ClientesController@perfil');
