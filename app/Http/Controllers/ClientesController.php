@@ -161,8 +161,7 @@ class ClientesController extends Controller
         
         return redirect('/dash');
     }
-
-
+    
     /**
      * Método para apagar conta
      * 
@@ -177,6 +176,6 @@ class ClientesController extends Controller
         // Set mensagem in session user
         $request->session()->flash('mensagem', "Excluido com sucesso!");
 
-        return redirect()->route('home');
+        return redirect('/dash');
     }
 }

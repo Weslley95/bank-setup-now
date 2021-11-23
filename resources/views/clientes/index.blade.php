@@ -22,6 +22,7 @@ Bank Setup Now
 <div class="form-group">
     <a href="/create" class="btn btn-success btn-sm" title="Novo usuário">Adicionar cliente</a>
     <a href="/" class="btn btn-primary btn-sm" title="Home">Home</a>
+    <a href="/economia" class="btn btn-primary btn-sm" title="Cotação">Cotações</a>
 </div>
 
 <table class="table table-hover table-sm">
