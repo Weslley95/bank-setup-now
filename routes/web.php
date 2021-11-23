@@ -35,8 +35,11 @@ Route::post('/edit/{id}', "ClientesController@updateUser");
 // Página individual usuário
 Route::get('/perfil/{id}', 'ClientesController@perfil');
 
-// Página individual usuário
+// Página cotação de moedas
 Route::get('/economia', 'EconomiaController@consultarCotacao');
+
+// Página fechamento de cotação
+Route::get('/close', 'EconomiaController@consultarFechamento');
 
 // Excluir usuário
 Route::delete('/dash/{id}', "ClientesController@delete");

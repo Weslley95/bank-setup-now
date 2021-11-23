@@ -14,11 +14,11 @@ Cotação
 <div class="form-group">
     <a href="/dash" class="btn btn-success btn-sm" title="Dash">Dash</a>
     <a href="/" class="btn btn-primary btn-sm" title="Home">Home</a>
-    <a href="/close" class="btn btn-primary btn-sm" title="fechamento">Fechamento</a>
+    <a href="/economia" class="btn btn-primary btn-sm" title="Home">Cotação</a>
 </div>
 
 <div class="table-responsive mt-3">
-    <h4>Cotações de Moedas - atualizado a cada 30 segundos</h4>
+    <h4>Cotações de Moedas - últimos fechamentos</h4>
     <table class="table table table-sm text-center">
         <thead>
             <tr class="thead-dark">
@@ -30,14 +30,14 @@ Cotação
                 <th scope="col">% de Variação</th>
                 <th scope="col">Compra</th>
                 <th scope="col">Venda</th>
-                <th scope="col">Data da cotação</th>
+                <th scope="col">Data de fechamento</th>
             </tr>
         </thead>
         <tbody>
+        @foreach($btcs as $btc)
             <tr scope="row">
-                @foreach($btcs as $btc)
-                <td>{{$btc->code}} / {{$btc->codein}}</td>
-                <td>{{$btc->name}}</td>
+                <td>BTC/BRL</td>
+                <td>Bitcoin/Real Brasileiro</td>
                 <td>R${{$btc->high}}</td>
                 <td>R${{$btc->low}}</td>
                 <td>R${{$btc->varBid}}</td>
@@ -45,12 +45,12 @@ Cotação
                 <td>R${{$btc->bid}}</td>
                 <td>R${{$btc->ask}}</td>
                 <td>{{date('d M Y',$btc->timestamp)}}</td>
-                @endforeach
             </tr>
+            @endforeach
+            @foreach($usds as $usd)
             <tr scope="row">
-                @foreach($usds as $usd)
-                <td>{{$usd->code}} / {{$usd->codein}}</td>
-                <td>{{$usd->name}}</td>
+                <td>USD/BRL</td>
+                <td>Dólar Americano/Real Brasileiro</td>
                 <td>R${{$usd->high}}</td>
                 <td>R${{$usd->low}}</td>
                 <td>R${{$usd->varBid}}</td>
@@ -58,12 +58,12 @@ Cotação
                 <td>R${{$usd->bid}}</td>
                 <td>R${{$usd->ask}}</td>
                 <td>{{date('d M Y',$usd->timestamp)}}</td>
-                @endforeach
             </tr>
+            @endforeach
+            @foreach($eurs as $eur)
             <tr scope="row">
-                @foreach($eurs as $eur)
-                <td>{{$eur->code}} / {{$eur->codein}}</td>
-                <td>{{$eur->name}}</td>
+                <td>EUR/BRL</td>
+                <td>Euro/Real Brasileiro</td>
                 <td>R${{$eur->high}}</td>
                 <td>R${{$eur->low}}</td>
                 <td>R${{$eur->varBid}}</td>
@@ -71,12 +71,12 @@ Cotação
                 <td>R${{$eur->bid}}</td>
                 <td>R${{$eur->ask}}</td>
                 <td>{{date('d M Y',$eur->timestamp)}}</td>
-                @endforeach
             </tr>
+            @endforeach
+            @foreach($brlts as $brlt)
             <tr scope="row">
-                @foreach($brlts as $brlt)
-                <td>{{$brlt->code}} / {{$brlt->codein}}</td>
-                <td>{{$brlt->name}}</td>
+                <td>USD/BRLT</td>
+                <td>Dólar Americano/Real Brasileiro Turismo</td>
                 <td>R${{$brlt->high}}</td>
                 <td>R${{$brlt->low}}</td>
                 <td>R${{$brlt->varBid}}</td>
@@ -84,8 +84,8 @@ Cotação
                 <td>R${{$brlt->bid}}</td>
                 <td>R${{$brlt->ask}}</td>
                 <td>{{date('d M Y',$brlt->timestamp)}}</td>
-                @endforeach
             </tr>
+            @endforeach
         </tbody>
     </table>
 </div>

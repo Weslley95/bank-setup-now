@@ -25,7 +25,7 @@ class ClientesController extends Controller
      * @param Request $request
      * @return string
      */
-    public function index(Request $request)
+    protected function index(Request $request)
     {
         // Get data BD
         $clientes = User::query()->orderBy('id')->get();
@@ -36,7 +36,7 @@ class ClientesController extends Controller
         return view('clientes.index', compact('clientes', 'mensagem'));
     }
 
-    public function perfil($clienteId)
+    protected function perfil($clienteId)
     {           
         $clientes = User::where('id', $clienteId)->get();
         $contas = Conta::where('user_id', $clienteId)->get();
@@ -70,7 +70,7 @@ class ClientesController extends Controller
      * 
      * @return string
      */
-    public function pageCreateClient()
+    protected function pageCreateClient()
     {
         return view('clientes.create');
     }
@@ -81,7 +81,7 @@ class ClientesController extends Controller
      * @param Request $request
      * @return string
      */
-    public function createClient(FormsRequest $request)
+    protected function createClient(FormsRequest $request)
     {
         // Recebe os dados do post(adicionar)
         $nome = $request->nome;
@@ -116,7 +116,7 @@ class ClientesController extends Controller
      * @param int $clienteId
      * @return object
      */
-    public function pageUpdate($clienteId){
+    protected function pageUpdate($clienteId){
         
         $contas = Conta::where('user_id', $clienteId)->get();
         $clientes = User::where('id', $clienteId)->get();
@@ -130,7 +130,7 @@ class ClientesController extends Controller
      * @param Object $request
      * @return string
      */
-    public function updateUser(FormsRequest $request)
+    protected function updateUser(FormsRequest $request)
     {
         // Recebe os dados do post
         $id = $request->id;
@@ -168,7 +168,7 @@ class ClientesController extends Controller
      * @param Request $request
      * @return type
      */
-    public function delete(Request $request)
+    protected function delete(Request $request)
     {
         Conta::destroy($request->id);
         User::destroy($request->id);
