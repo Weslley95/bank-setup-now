@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div class="container mb-5">
+  <div class="container">
     <div class="jumbotron mb-3 bg-info text-white">
       <h1>@yield('header')</h1>
     </div>
@@ -26,13 +26,11 @@
   </div>
 
   <!-- Footer-->
-  <footer class="fixed-bottom" style="background-color: #1e8495;">
-    <div class="container text-center">
-      <a class="btn btn-outline-light btn-floating m-2" href="https://github.com/Weslley95/data-controllers" target="_blank" role="button">
-        <i class="bi bi-github"></i>
-      </a>
-      <p class="text-center text-white">Copyright © 2021 Bank Setup Now</p>
-    </div>
+  <footer class="fixed-bottom pt-1 text-center" style="background-color: #1e8495;">
+    <a class="btn btn-outline-light btn-sm" href="https://github.com/Weslley95/data-controllers" target="_blank" role="button">
+      <i class="bi bi-github"></i>
+    </a>
+    <p class="text-center text-white">Copyright © 2021 Bank Setup Now</p>
   </footer>
 
 </body>

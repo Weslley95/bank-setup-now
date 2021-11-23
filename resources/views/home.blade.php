@@ -17,11 +17,10 @@
 
 <body class="text-center text-white bg-info">
     <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg" style="background-color: #1b7384;">
-        <div class="container">
-            <a class="navbar-brand text-white btn-sm btn-dark" href="/dash">Dashboard</a>
-            <a class="navbar-brand text-white btn-sm btn-dark" href="/economia">Cotações</a>
-        </div>
+    <nav class="navbar justify-content-center" style="background-color: #1e8495;">
+        <a class="btn btn-sm btn-light m-1 " href="/dash">Dashboard</a>
+        <a class="btn btn-sm btn-light m-1" href="/economia">Cotações</a>
+        <a class="btn btn-sm btn-light m-1" href="/close">Fechamentos</a>
     </nav>
     <!-- Header - set the background image for the header in the line below-->
     <header class="container mb-2 mt-5">
@@ -31,7 +30,7 @@
     </header>
     <!-- Content section-->
     <section class="py-5">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
@@ -61,13 +60,11 @@
     </section>
 
     <!-- Footer-->
-    <footer class="py-1 bg-dark fixed-bottom">
-        <div class="container text-center">
-            <a class="btn btn-outline-light btn-floating m-2" href="https://github.com/Weslley95/data-controllers" target="_blank" role="button">
-                <i class="bi bi-github"></i>
-            </a>
-            <p class="text-center text-white">Copyright © 2021 Bank Setup Now</p>
-        </div>
+    <footer class="fixed-bottom pt-1" style="background-color: #1e8495;">
+        <a class="btn btn-outline-light btn-sm" href="https://github.com/Weslley95/data-controllers" target="_blank" role="button">
+            <i class="bi bi-github"></i>
+        </a>
+        <p class="text-center text-white">Copyright © 2021 Bank Setup Now</p>
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

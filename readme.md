@@ -7,17 +7,17 @@
 </p>
 <h1 align="center">
     <a href="https:/lms.setupnow.com.br" target="_blank">
-    <img alt="Setup Now" title="#NextLevelWeek" src="./public/bank_setup.png" width="300px"/>
+    <img alt="Setup Now" title="#NextLevelWeek" src="./public/bank_setup.png" width="360px"/>
     </a>
 </h1>
 
 <h4 align="center"> 
-	🚧  Project Sixth Semester Uni9 🚧
+	🚧  Project 6º Semestre Uninove 🚧
 </h4>
 
 ## 💻 Sobre o projeto
 
-🧭 Projeto básico, desenvolvido utilizando Laravel, utilizando recursos simples MVC e inserção de dados.
+🧭 Projeto desenvolvido utilizando Laravel, versão 5.8 e PHP 7.3, arquitetura simples em MVC, a qual é possível realizar inserção de dados e contém uma API consumindo dados para cotações de moedas.
 
 ---
 
@@ -25,7 +25,8 @@
 
 - [x] Adicionar usuários
 - [x] Atualizar dados
-- [x] Remover usuários
+- [x] Exlcuir usuários
+- [x] API externa
 
 ---
 
