@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="http://lms.setupnow.com.br" target="_blank">
+  <a href="http://bank.setupnow.com.br" target="_blank">
     <img alt="Setup Now" src="https://img.shields.io/badge/Feito%20por-Setup%20Now-%237519C1">
     <img alt="Setup Now" src="https://img.shields.io/badge/Acessar-%237519C1">
   </a>
  
 </p>
 <h1 align="center">
-    <a href="https:/lms.setupnow.com.br" target="_blank">
+    <a href="https:/bank.setupnow.com.br" target="_blank">
     <img alt="Setup Now" title="#NextLevelWeek" src="./public/bank_setup.png" width="360px"/>
     </a>
 </h1>
